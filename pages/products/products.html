@@ -1,0 +1,90 @@
+<!-- main -->
+<main class="main">
+	<!-- tabs for products -->
+	<div class="products">
+
+		<div class="products__tab">
+			{% for category in categories %}
+			<h3>{{{category.name}}}</h3>
+			{% for tag in category.tags %}
+			<li class="products__tag" type="circle">
+				<a href="{{{url}}}/{{{tag.id}}}">{{{tag.name}}}</a>
+			</li>
+			{% endfor %}
+			{% endfor %}
+			<!-- <button class="products__tablinks" onclick="openCollection(event, 'Pants')" id="defaultOpen">Штани</button>
+			<button class="products__tablinks" onclick="openCollection(event, 'Dress')">Сукні</button>
+			<button class="products__tablinks" onclick="openCollection(event, 'T-shirt')">Футболки</button>
+			<button class="products__tablinks" onclick="openCollection(event, 'Shoes')">Взуття</button>
+			<button class="products__tablinks" onclick="openCollection(event, 'Skirt')">Юбки</button> -->
+		</div>
+
+		<div class="products__items">
+			{% for product in products %}
+			<div class="products__tabcontent-photo">
+				<a class="products__tabcontent-link" href="/product/{{{product.id}}}">
+					<img src="{{{product.thumb}}}">
+					<figcaption class="products__tabcontent-text">{{{product.name}}}</figcaption>
+					<span>{{{product.short}}}</span>
+				</a>
+			</div>
+			{% endfor %}
+		</div>
+
+		<!-- <div id="Pants" class="products__tabcontent">
+			{% for product in products %}
+			<div class="products__tabcontent-photo">
+				<a class="products__tabcontent-link" href="/product">
+					<img src="{{{product.thumb}}}">
+					<figcaption class="products__tabcontent-text">{{{product.name}}}</figcaption>
+				</a>
+			</div>
+			{% endfor %}
+		</div>
+
+		<div id="Dress" class="products__tabcontent">
+			{% for product in products %}
+			<div class="products__tabcontent-photo">
+				<a class="products__tabcontent-link" href="/product">
+					<img src="{{{product.thumb}}}">
+					<figcaption class="products__tabcontent-text">{{{product.name}}}</figcaption>
+				</a>
+			</div>
+			{% endfor %}
+		</div>
+
+		<div id="T-shirt" class="products__tabcontent">
+			{% for product in catalog %}
+			<div class="products__tabcontent-photo">
+				<a class="products__tabcontent-link" href="/product">
+					<img src="{{{product.thumb}}}">
+					<figcaption class="products__tabcontent-text">{{{product.name}}}</figcaption>
+				</a>
+			</div>
+			{% endfor %}
+		</div>
+
+		<div id="Shoes" class="products__tabcontent">
+			{% for product in catalogs %}
+			<div class="products__tabcontent-photo">
+				<a class="products__tabcontent-link" href="/product">
+					<img src="{{{product.thumb}}}">
+					<figcaption class="products__tabcontent-text">{{{product.name}}}</figcaption>
+				</a>
+			</div>
+			{% endfor %}
+		</div>
+
+		<div id="Skirt" class="products__tabcontent">
+			{% for product in produce %}
+			<div class="products__tabcontent-photo">
+				<a class="products__tabcontent-link" href="/product">
+					<img src="{{{product.thumb}}}">
+					<figcaption class="products__tabcontent-text">{{{product.name}}}</figcaption>
+				</a>
+			</div>
+			{% endfor %}
+		</div> -->
+	</div>
+
+</main>

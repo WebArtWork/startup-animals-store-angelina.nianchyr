@@ -1,0 +1,42 @@
+{
+    "title": "Page Title",
+	"url": "localhost:8080",
+	"categories": [
+		{
+			"id": "CATEGORY NAME",
+			"name": "CATEGORY NAME",
+			"tags": [
+				{
+					"id": "tag",
+					"name": "Tag name"
+				}
+			]
+		}
+	],
+    "products": [
+        {
+            "id": "something",
+            "name": "something",
+            "short": "something",
+            "thumb": "/angelina.nianchyr/img/7.webp"
+        },
+        {
+            "id": "something",
+            "name": "something",
+            "short": "something",
+            "thumb": "/angelina.nianchyr/img/8.webp"
+        },
+        {
+            "id": "something",
+            "name": "something",
+            "short": "something",
+            "thumb": "/angelina.nianchyr/img/9.webp"
+        },
+        {
+            "id": "something",
+            "name": "something",
+            "short": "something",
+            "thumb": "/angelina.nianchyr/img/10.webp"
+        }
+    ]
+}

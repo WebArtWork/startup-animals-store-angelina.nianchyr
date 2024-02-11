@@ -1,0 +1,334 @@
+<!-- main -->
+<main class="main">
+
+	<!-- photo -->
+	<div class="photo">
+
+		<video id="myVideo" class="photo__video" src="/angelina.nianchyr/img/lands.MP4" autoplay preload loop poster="/angelina.nianchyr/img/prints-1.jpg"></video>
+
+		<div class="photo__filling">
+			<p class="photo__text-one">Affordable Luxury</p>
+			<p class="photo__text-two">Beautiful pieces to pass down for generations</p>
+
+			<a href="/products"><button class="photo__button">Shop The collections</button></a>
+			<a href="/product"><button class="photo__button">Shop Sale</button></a> 
+		</div>
+	</div>
+ 
+	<!-- text --> 
+	<div class="text">
+		<p class="text__one">Fine clothes for every day. Always in trend and always fashionable.</p>
+
+		<p class="text__two">Shop our modern <a href="/products"><img class="text__image" src="/angelina.nianchyr/img/2.webp"></a> clothes,
+			bestselling fine collection</p>
+		<p class="text__two"> <a href="/products"><img class="text__image" src="/angelina.nianchyr/img/5.webp"></a>
+			and thoughtfully
+			<a href="/products"><img class="text__image" src="/angelina.nianchyr/img/4.webp"></a>curated image.
+		</p>
+	</div>
+
+	<!-- collections -->
+	<div class="collections">
+
+		{% for collections in collections %}
+		<div class="collections__block">
+			<a class="collections__block-link" href="/products">
+				<img src="{{{collections.thumb}}}">
+				<p class="collections__block-name">{{{collections.name}}}</p>
+				<p class="collections__block-description">{{{collections.description}}}</p>
+			</a>
+		</div>
+		{% endfor %}
+
+	</div>
+
+	<!-- sale -->
+	<div class="sale">
+		<div class="sale__text">
+			<div class="sale__text-left">
+				<p>Get 20% off all sale items</p>
+			</div>
+			<div class="sale__text-right">
+				<p>Use code EXTRA at checkout</p>
+			</div>
+		</div>
+	</div>
+
+	<!-- tabs -->
+	<div class="collection">
+
+		<div class="collection__tab">
+			<button class="collection__tablinks" onclick="openClothes(event, 'Jeans')" id="defaultOpen">Jeans</button>
+			<button class="collection__tablinks" onclick="openClothes(event, 'T-shirt')">T-shirt</button>
+			<button class="collection__tablinks" onclick="openClothes(event, 'Dress')">Dress</button>
+		</div>
+
+		<div id="Jeans" class="collection__tabcontent">
+
+			<div class="collection__tabcontent-block">
+				<a class="collection__tabcontent-link" href="/product">
+					<img src="/angelina.nianchyr/img/p-one.png">
+					<figcaption class="collection__tabcontent-text">something - 67.99 $</figcaption>
+				</a>
+			</div>
+			<div class="collection__tabcontent-block">
+				<a class="collection__tabcontent-link" href="/product">
+					<img src="/angelina.nianchyr/img/2.webp">
+					<figcaption class="collection__tabcontent-text">something - 67.99 $</figcaption>
+				</a>
+			</div>
+			<div class="collection__tabcontent-block">
+				<a class="collection__tabcontent-link" href="/product">
+					<img src="/angelina.nianchyr/img/4.webp">
+					<figcaption class="collection__tabcontent-text">something - 67.99 $</figcaption>
+				</a>
+			</div>
+			<div class="collection__tabcontent-block">
+				<a class="collection__tabcontent-link" href="/product">
+					<img src="/angelina.nianchyr/img/7.webp">
+					<figcaption class="collection__tabcontent-text">something - 67.99 $</figcaption>
+				</a>
+			</div>
+			<div class="collection__tabcontent-block">
+				<a class="collection__tabcontent-link" href="/product">
+					<img src="/angelina.nianchyr/img/8.webp">
+					<figcaption class="collection__tabcontent-text">something - 67.99 $</figcaption>
+				</a>
+			</div>
+			<div class="collection__tabcontent-block">
+				<a class="collection__tabcontent-link" href="/product">
+					<img src="/angelina.nianchyr/img/9.webp">
+					<figcaption class="collection__tabcontent-text">something - 67.99 $</figcaption>
+				</a>
+			</div>
+			<div class="collection__tabcontent-block">
+				<a class="collection__tabcontent-link" href="/product">
+					<img src="/angelina.nianchyr/img/10.webp">
+					<figcaption class="collection__tabcontent-text">something - 67.99 $</figcaption>
+				</a>
+			</div>
+		</div>
+
+		<div id="T-shirt" class="collection__tabcontent">
+
+			<div class="collection__tabcontent-block">
+				<a class="collection__tabcontent-link" href="/product">
+					<img src="/angelina.nianchyr/img/p-one.png">
+					<figcaption class="collection__tabcontent-text">something - 67.99 $</figcaption>
+				</a>
+			</div>
+
+			<div class="collection__tabcontent-block">
+				<a class="collection__tabcontent-link" href="/product">
+					<img src="/angelina.nianchyr/img/2.webp">
+					<figcaption class="collection__tabcontent-text">something - 67.99 $</figcaption>
+				</a>
+			</div>
+			<div class="collection__tabcontent-block">
+				<a class="collection__tabcontent-link" href="/product">
+					<img src="/angelina.nianchyr/img/4.webp">
+					<figcaption class="collection__tabcontent-text">something - 67.99 $</figcaption>
+				</a>
+			</div>
+			<div class="collection__tabcontent-block">
+				<a class="collection__tabcontent-link" href="/product">
+					<img src="/angelina.nianchyr/img/7.webp">
+					<figcaption class="collection__tabcontent-text">something - 67.99 $</figcaption>
+				</a>
+			</div>
+			<div class="collection__tabcontent-block">
+				<a class="collection__tabcontent-link" href="/product">
+					<img src="/angelina.nianchyr/img/8.webp">
+					<figcaption class="collection__tabcontent-text">something - 67.99 $</figcaption>
+				</a>
+			</div>
+			<div class="collection__tabcontent-block">
+				<a class="collection__tabcontent-link" href="/product">
+					<img src="/angelina.nianchyr/img/9.webp">
+					<figcaption class="collection__tabcontent-text">something - 67.99 $</figcaption>
+				</a>
+			</div>
+			<div class="collection__tabcontent-block">
+				<a class="collection__tabcontent-link" href="/product">
+					<img src="/angelina.nianchyr/img/10.webp">
+					<figcaption class="collection__tabcontent-text">something - 67.99 $</figcaption>
+				</a>
+			</div>
+		</div>
+
+		<div id="Dress" class="collection__tabcontent">
+
+			<div class="collection__tabcontent-block">
+				<a class="collection__tabcontent-link" href="/product">
+					<img src="/angelina.nianchyr/img/p-one.png">
+					<figcaption class="collection__tabcontent-text">something - 67.99 $</figcaption>
+				</a>
+			</div>
+
+			<div class="collection__tabcontent-block">
+				<a class="collection__tabcontent-link" href="/product">
+					<img src="/angelina.nianchyr/img/2.webp">
+					<figcaption class="collection__tabcontent-text">something - 67.99 $</figcaption>
+				</a>
+			</div>
+			<div class="collection__tabcontent-block">
+				<a class="collection__tabcontent-link" href="/product">
+					<img src="/angelina.nianchyr/img/4.webp">
+					<figcaption class="collection__tabcontent-text">something - 67.99 $</figcaption>
+				</a>
+			</div>
+			<div class="collection__tabcontent-block">
+				<a class="collection__tabcontent-link" href="/product">
+					<img src="/angelina.nianchyr/img/7.webp">
+					<figcaption class="collection__tabcontent-text">something - 67.99 $</figcaption>
+				</a>
+			</div>
+			<div class="collection__tabcontent-block">
+				<a class="collection__tabcontent-link" href="/product">
+					<img src="/angelina.nianchyr/img/8.webp">
+					<figcaption class="collection__tabcontent-text">something - 67.99 $</figcaption>
+				</a>
+			</div>
+			<div class="collection__tabcontent-block">
+				<a class="collection__tabcontent-link" href="/product">
+					<img src="/angelina.nianchyr/img/9.webp">
+					<figcaption class="collection__tabcontent-text">something - 67.99 $</figcaption>
+				</a>
+			</div>
+			<div class="collection__tabcontent-block">
+				<a class="collection__tabcontent-link" href="/product">
+					<img src="/angelina.nianchyr/img/10.webp">
+					<figcaption class="collection__tabcontent-text">something - 67.99 $</figcaption>
+				</a>
+			</div>
+		</div>
+	</div>
+
+	<!-- produce -->
+	<div class="produce">
+		<div class="produce__photo">
+			<img src="/angelina.nianchyr/img/8.webp" alt="">
+		</div>
+		<div class="produce__description">
+			<p class="produce__description-text">Our Promise</p>
+			<p class="produce__description-title">Ethical is Beautiful</p>
+			<p class="produce__description-text">We are committed to quality products that are manufactured
+				ethically and sustainably. All of our
+				pieces are traceable throughout the supply chain. We strive to ensure our products contribute to the
+				well-being of people and planet, and our efforts put us on track towards a brighter future.</p>
+		</div>
+	</div>
+
+	<!-- subsection -->
+	<div class="subsection">
+		<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempore quo, sapiente illo veritatis architecto
+			minus, placeat doloribus dolore libero accusamus animi aperiam soluta mollitia consequuntur, quibusdam
+			ut iusto! Ex, deserunt.</p>
+	</div>
+
+	<!--  news -->
+	<div class="tidings">
+
+		<div>
+			<p class="tidings__title">Новини</p>
+		</div>
+
+		<!-- тут має бути 3 елементи -->
+		<div class="tidings__news">
+			{% for tiding in tidings %}
+			<div class="tidings__blocks">
+				<div class="tidings__block-title">
+					<p>{{{tiding.name}}}</p>
+				</div>
+				<a class="tidings__block" href="/articles">
+					<div class="tidings__block-photo">
+						<img src="{{{tiding.thumb}}}">
+					</div>
+					<div class="tidings__block-text">
+						<p>{{{tiding.description}}}</p>
+					</div>
+				</a>
+			</div>
+			{% endfor %}
+		</div>
+	</div>
+
+	<!-- subsection -->
+	<div class="subsection">
+		<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempore quo, sapiente illo veritatis architecto
+			minus, placeat doloribus dolore libero accusamus animi aperiam soluta mollitia consequuntur, quibusdam
+			ut iusto! Ex, deserunt.</p>
+	</div>
+
+	<!-- catalog -->
+	<div class="catalog">
+		<div class="catalog__title">
+			<p class="catalog__title-text">The Essential Collection</p>
+		</div>
+
+		<div class="catalog__items">
+
+			<!-- тут має бути 4 елементи -->
+			{% for catalog in catalog %}
+			<div class="catalog__items-photo">
+				<a class="catalog__items-link" href="/product">
+					<img src="{{{catalog.thumb}}}" alt="">
+					<figcaption class="catalog__items-text">{{{catalog.name}}}</figcaption>
+				</a>
+			</div>
+			{% endfor %}
+
+		</div>
+	</div>
+
+	<!-- subsection -->
+	<div class="subsection">
+		<p>"We partner with high quality jewellers who only use recycled gold, AAA-grade gemstones, and ethically
+			sourced diamonds."</p>
+	</div>
+
+	<!-- shopping -->
+	<div class="shopping">
+		<div class="shopping__left">
+			<div class="shopping__left-filling">
+				<h2>Duo Form Ring</h2>
+				<p>Explore rings for your big moment, and all the little memories after.</p>
+				<a href="/products">
+					<button>Shop now</button>
+				</a>
+			</div>
+		</div>
+
+		<div class="shopping__right">
+			<div class="shopping__right-filling">
+				<h2>Contemporary and Timeless</h2>
+				<p>Accessorize with 14k recycled gold all day, everyday.</p>
+				<a href="/products">
+					<button>Shop now</button>
+				</a>
+			</div>
+		</div>
+	</div>
+
+	<!-- subsection -->
+	<div class="subsection">
+		<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempore quo, sapiente illo veritatis architecto
+			minus, placeat doloribus dolore libero accusamus animi aperiam soluta mollitia consequuntur, quibusdam
+			ut iusto! Ex, deserunt.</p>
+	</div>
+
+	<!-- photo-slider -->
+	<div class="slider">
+
+		<!-- тут має бути мінімум 4 елементи -->
+		{% for slider in product %}
+		<div class="slider__container-block">
+			<a class="slider__container-link" href="/product">
+				<img src="{{{slider.thumb}}}" alt="{{{slider.name}}}">
+			</a>
+		</div>
+		{% endfor %}
+
+	</div>
+
+</main>

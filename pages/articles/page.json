@@ -1,0 +1,25 @@
+{
+    "title": "Page Title",
+    "articles": [
+        {
+            "name": "NameTitle",
+            "thumb": "/angelina.nianchyr/img/4.webp",
+            "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, officia, incidunt fuga quas cumque beatae quae maxime repellat expedita doloribus iusto aliquid consectetur saepe. Vero quis quae dolorum laboriosam iste?"
+        },
+        {
+            "name": "NameTitle",
+            "thumb": "/angelina.nianchyr/img/8.webp",
+            "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, officia, incidunt fuga quas cumque beatae quae maxime repellat expedita doloribus iusto aliquid consectetur saepe. Vero quis quae dolorum laboriosam iste?"
+        },
+        {
+            "name": "NameTitle",
+            "thumb": "/angelina.nianchyr/img/7.webp",
+            "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, officia, incidunt fuga quas cumque beatae quae maxime repellat expedita doloribus iusto aliquid consectetur saepe. Vero quis quae dolorum laboriosam iste?"
+        },
+        {
+            "name": "NameTitle",
+            "thumb": "/angelina.nianchyr/img/5.webp",
+            "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, officia, incidunt fuga quas cumque beatae quae maxime repellat expedita doloribus iusto aliquid consectetur saepe. Vero quis quae dolorum laboriosam iste?"
+        }
+    ]
+}

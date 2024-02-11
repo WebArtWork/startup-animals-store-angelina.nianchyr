@@ -1,0 +1,51 @@
+{
+	"title": "Page Title",
+	"collections": [
+		{
+			"name": "Man Collectcion",
+			"thumb": "/angelina.nianchyr/img/p-one.png",
+			"description": "Timelles and weraable earrings with a modern twist that add a touch of style to  any outfit"
+		},
+		{
+			"name": "Child Collectcion",
+			"thumb": "/angelina.nianchyr/img/prints-1.jpg",
+			"description": "Timelles and weraable earrings with a modern twist that add a touch of style to  any outfit"
+		},
+		{
+			"name": "Woman Collectcion",
+			"thumb": "/angelina.nianchyr/img/prints.jpg",
+			"description": "Timelles and weraable earrings with a modern twist that add a touch of style to  any outfit"
+		}
+	],
+	"tidings": [
+		{
+			"name": "NameTitle",
+			"thumb": "/angelina.nianchyr/img/7.webp",
+			"description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, officia, incidunt fuga quas cumque beatae quae maxime repellat expedita doloribus iusto aliquid consectetur saepe. Vero quis quae dolorum laboriosam iste?"
+		}
+	],
+	"catalog":[
+		{
+			"name": "Adelaide Hoops in Sterling Silver",
+			"thumb": "/angelina.nianchyr/img/8.webp"
+		}
+	],
+	"product":[
+		{
+			"name": "",
+			"thumb": "/angelina.nianchyr/img/4.webp"
+		},
+		{
+			"name": "",
+			"thumb": "/angelina.nianchyr/img/7.webp"
+		},
+		{
+			"name": "",
+			"thumb": "/angelina.nianchyr/img/2.webp"
+		},
+		{
+			"name": "",
+			"thumb": "/angelina.nianchyr/img/9.webp"
+		}
+	]
+}
